@@ -34,7 +34,7 @@ while game_is_on:
         score1.increasescore()
         rand_food.refresh()
         snake.extend()
-    for segment in snake.segments[1:-1]:
+    for segment in snake.segments[1:]:
 
         if snake.head.distance(segment)<10:
             game_is_on=False
