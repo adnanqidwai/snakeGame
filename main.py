@@ -27,7 +27,7 @@ while game_is_on:
     screen.update()
     time.sleep(0.08)
     snake.move()
-    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+    if snake.head.xcor() > 290 or snake.head.xcor() < -290 or snake.head.ycor() > 290 or snake.head.ycor() < -290:
         game_is_on = False
         score1.gameover()
     if snake.head.distance(rand_food) < 15:
